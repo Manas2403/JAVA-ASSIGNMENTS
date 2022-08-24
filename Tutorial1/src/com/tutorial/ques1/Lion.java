@@ -1,13 +1,27 @@
 package com.tutorial.ques1;
 
-public class Lion {
-    public void movement(){
-        System.out.println("On Land");
+public class Lion extends Animal{
+    public Lion(String food, String location) {
+        super(food, location);
     }
-    public void food(){
+
+    @Override
+    void makeNoise() {
+        System.out.println("Roar");
+    }
+
+    @Override
+    void eat() {
         System.out.println("Meat");
     }
-    public void sound(){
-        System.out.println("Roar");
+
+    @Override
+    void roam() {
+        System.out.println("Jungle");
+    }
+
+    @Override
+    void sleep() {
+        System.out.println("Sleep💤");
     }
 }
